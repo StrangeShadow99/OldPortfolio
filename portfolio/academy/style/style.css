@@ -1,0 +1,513 @@
+body{
+    margin: 0px;
+    padding: 0;
+    font-family: 'Birdseye', sans-serif;
+}
+.title{
+    text-align: center;  
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+}
+        
+.Academies{
+    padding: 0 0 0 0;
+}
+.First {
+    float: left;
+    padding: 0 0 0 0;
+    margin: 0;
+}
+.Second {
+    float:right;
+    padding: 0 0 0 0;
+    margin: 0;
+}
+
+.kcait{
+    text-align: left;
+}
+.DrO{
+    text-align: center;
+}
+.SubHead{       
+    color:#a9a1a1;
+}
+.SubHead2{
+    color: #a9a1a1;
+}
+.Text{
+    font-size: 20;
+    font-weight:500;
+}
+.apply{
+    background-color: transparent;
+    color: black;
+    font-size: 20px;
+    border: 1px solid black; 
+    text-decoration:none;
+    padding: 10 10 7 10; 
+}
+.apply:hover{
+    border: 1px solid grey; 
+    color: grey;
+}
+.Survey{
+    background-color: transparent;
+    color: black;
+    float: left;
+}
+.Survey:hover{
+    background-color:black;
+    color:#f5f3f1;
+}
+video{
+    padding-top: 50px;
+    width:500px;
+}
+.Information{ 
+    text-align: center;
+}
+.DrO{
+    padding-top: 40px;
+    height:400px;
+}
+.teacher img{
+    padding:0 0 0 0;
+    width:90%
+}
+.teachers {
+    text-align: center;
+    margin-right:5%;
+    margin-left: 5%;
+    display: flex;
+
+}
+.teacher{
+    padding-right:20px;
+    padding-left:20px;
+    width:30%;
+}
+#teacher-one{
+    float: left;
+}
+#teacher-two{
+    margin-left:auto;
+    margin-right:auto;
+}
+#teacher-three{
+    float:right;
+}
+.teacher-email{
+    color: black;
+    font-size: 50px;
+}
+.teacher-email:hover{
+    color: grey;
+}
+/*nav*/
+nav{
+    background-size:cover; 
+    width: 100%;
+    padding-top: 20px;
+    height:50vh;
+}
+#right_nav li a {
+    display: block;
+    color: white;
+    padding:16px;
+    text-decoration: none;
+    font-family: 'Birdseye', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+#right_nav {
+    float: right;
+    padding-right: 30px;
+}
+#right_nav li{
+    display: inline-block;
+}
+#home a{
+    color: white;
+    text-decoration: none;
+    padding-left:10px;
+    font-weight:900;
+    float: left;
+}
+#home a:hover{
+color: grey;
+}
+#right_nav :hover{
+    color:grey;
+}
+
+nav  ul #right_nav ul{
+    display: none;
+    position: absolute;
+}
+nav ul #right_nav li:hover ul{
+    display:block;
+}
+nav ul #right_nav ul li {
+    display: block;
+    float: none;
+}
+nav p{
+    color: white;
+    font-size: 55px;
+    padding-top: 150px;
+    padding-left: 30px;
+}  
+.page-head{
+    color: white;
+    font-size: 400%;
+}
+#index_apply{
+    border: 1px solid white;
+    text-decoration:none; 
+    margin-left:40;
+    padding: 10 10 7 10;
+    color: white;
+    font-size: 20px;
+}
+#index_apply:hover{
+    color:grey;
+    border: 1px solid grey;
+}
+.academiesDropDown{
+    background-color: black;
+}
+#index_nav{
+    background:linear-gradient(#000,transparent), url(../pics/MediaArts/MApic1.JPG);
+    background-size: cover;
+    height:80%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+#Bio_nav{
+    background-image:url(../pics/Bio/Biomed2.jpg);
+    background-size: cover;
+    height:80%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+
+}
+#Inf_nav{
+    background:linear-gradient(#000, transparent),url(../pics/Informatics/blur-close-up-code-546819.jpg);
+    background-size: cover;
+    height:80%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+
+}
+#Gem_nav{
+    background:linear-gradient(#000, transparent),url(../pics/Gemini/GeminiPic2.JPG);
+    background-size: cover;
+    height:80%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+
+}
+#mil_nav{
+    background:linear-gradient(#000, transparent),url(../pics/Military/M1.jpg);
+    background-size: cover;
+    height:80%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+#engineering_nav{
+    background:linear-gradient(#000, transparent),url(../pics/Engineeingpeople/Engineering.jpeg);
+    background-size: cover;
+    height:80%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+#Wengineering_nav{
+    background:linear-gradient(#000, transparent),url(../pics/Engineeingpeople/black-and-white-car-engine-chrome-190574.jpg);
+    background-size: cover;
+    height:80%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+#futureEd_nav{
+    background:linear-gradient(#000, transparent),url(../pics/FutureEd/assortment-book-book-bindings-1130980.jpg);
+    background-size: cover;
+    height:80%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 100%;
+}
+#default_nav{
+    background-color: black;
+    height: 10%;
+    margin-bottom: 10px;
+
+}
+#mobile_nav{
+    height: 100% !important;
+    width: 100px;
+    margin-top: 0px;
+    right: 0;
+    top:0;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: black;
+    z-index: 10000;
+    display: none;
+    padding-right: 30px;
+    padding-left: 30px;
+    text-align: left;
+}
+#mobile_nav li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+#mobile_nav li{
+    margin-bottom: 10px;
+}
+#mobile_nav li a:hover{
+    color:grey;
+}
+#mobile li{
+    margin-left: auto;
+    margin-right: auto;
+} 
+nav h1{
+    font-size: 4vw;
+    color: white;
+    padding-left:20px;
+    margin-top:200px
+}
+/*index*/ 
+#moreInfo{
+    padding-left: 10px;
+}
+.Academies{
+    padding: 0 0 0 0;
+}
+.indexSecond {
+    float: left;
+    padding: 0 0 0 0;
+    margin: 0;
+}
+.kcait{
+    text-align: left;
+}
+
+.SubHead{
+    color:#a9a1a1;
+}
+.SubHead2{
+    color: #a9a1a1;
+}
+.Apply{
+    background-color: white;
+    color: black;
+}
+.Apply:hover{
+    background-color: transparent;
+    color: white;
+}
+.Survey{
+    background-color: transparent;
+    color: black;
+    float: left;
+}
+.Survey:hover{
+    background-color:black;
+    color:#f5f3f1;
+}
+.video{
+    text-align: center;
+}
+.Information{ 
+    text-align: center;
+}
+.one{
+    background-color: rgb(240, 240, 240);
+}
+#indexDrO{
+    display: flex;
+}
+.index-section{
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.index-section img{
+    position: flex;
+    float: left;
+    padding-right: 10px;
+}
+.indexNoPic .index-section-text{
+    padding-right: 20px;
+    text-align: center;
+}
+.indexDrO .index-section-text{
+    text-align: left;
+}
+/*academy*/
+.academyMain{
+    text-align: center;
+}
+.hover :hover{
+    color:grey;
+}
+
+.Academies{
+    padding: 0 0 0 0;
+}
+.academy{
+    display:bloack; 
+    float:left;
+    margin-left:10px; 
+    margin-bottom:10px;
+    height:200; 
+    width:300; 
+    border: solid 1px black;
+}
+.academy{
+    color: transparent;
+}
+.academyPic:hover{
+    background:transparent;
+    color: black;
+}
+.academyPic{
+    display:block; 
+    float:left; 
+    margin-left:10px; 
+    height:200; 
+    width:300; 
+    border: solid 1px black;
+    margin-bottom: 10px;
+}
+.academiesText{
+    color:transparent;
+}
+.academyPic .academiesText:hover{
+    color: black
+}
+.academyBiomed{
+    background-image:url(../pics/Academies/People.jpg);
+}
+.academyInform{
+    background-image:url(../pics/Academies/InfPic12.jpg);
+}  
+.academyStructural{
+    background-image:url(../pics/Engineeingpeople/S1.jpg);
+}  
+.academyMedia{
+    background-image:url(../pics/Academies/Mediaarts1.JPG);
+}
+.academyRobotic{
+    background-image:url(../pics/Engineeingpeople/R1.JPG);
+}
+.academyGreenE{
+    background-image:url(../pics/Engineeingpeople/GEpic2.JPG);
+}
+.academyWomensE{
+    background-image:url(../pics/Engineeingpeople/W1.jpg);
+}
+.academyFutureEd{
+    background-image:url(../pics/Academies/download.jpg);
+}
+.academyMilitary{
+    background-image:url(../pics/Military/M1.jpg);
+}
+.academyGemini{
+    background-image:url(../pics/Academies/GeminiPic1.jpg);
+}
+h4{
+    margin-left: 10;
+}
+.teacher{
+    text-align: center;
+}
+.teachers div img{
+    width:159;
+    height:122;
+    padding:0 20 0 0;
+}
+
+@media (min-width:10px) and (max-width:1005px){
+    #teacher-one{
+        float: none;
+    }
+    #teacher-three{
+        float:none;
+    }
+    .teacher{
+        padding-right:10px;
+        padding-left:10px;
+        width:100%;
+    }
+    .teachers {
+        text-align: center;
+        margin-right:5%;
+        margin-left: 5%;
+        display: block;
+    }
+    
+}
+@media (min-width:1000px){
+    #navSideButton{
+        display: none;
+    }
+    .navSideButton{
+        width: 0px;
+        display: none;
+    }
+    #mobile_nav{
+        display: none;
+        width: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .main-nav{
+        display: block;
+    
+    }
+}
+@media (min-width:10px) and (max-width:1005px){
+    .navSideButton{
+        padding-right: 20px;
+        float: right;
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+        font-size: 15px;
+        font-size: 30px;
+    }
+    #mobile_nav li .navSideButton{
+        padding-top: 20px;
+    }
+    .navSideButton{
+        display: block;
+    }
+    #mobilde_nav span .navSideButton{
+        padding-top: 0px;
+    }
+    #mobile-nav{
+        padding-top: 0px;
+        width:100px;
+    }
+    .main-nav{
+        display: none;
+    }
+}

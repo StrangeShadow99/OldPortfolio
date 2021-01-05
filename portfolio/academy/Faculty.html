@@ -1,0 +1,380 @@
+<!Document html>
+<html>
+<head>
+    <title>KCAIT</title>
+    <link rel="shortcut icon"  
+     href="pics/Untitled.png">
+    <script>
+    (function(document) {
+	'use strict';
+
+	var LightTableFilter = (function(Arr) {
+
+		var _input;
+
+		function _onInputEvent(e) {
+			_input = e.target;
+			var tables = document.getElementsByClassName(_input.getAttribute('data-table'));
+			Arr.forEach.call(tables, function(table) {
+				Arr.forEach.call(table.tBodies, function(tbody) {
+					Arr.forEach.call(tbody.rows, _filter);
+				});
+			});
+		}
+
+		function _filter(row) {
+			var text = row.textContent.toLowerCase(), val = _input.value.toLowerCase();
+			row.style.display = text.indexOf(val) === -1 ? 'none' : 'table-row';
+		}
+
+		return {
+			init: function() {
+				var inputs = document.getElementsByClassName('light-table-filter');
+				Arr.forEach.call(inputs, function(input) {
+					input.oninput = _onInputEvent;
+				});
+			}
+		};
+	})(Array.prototype);
+
+	document.addEventListener('readystatechange', function() {
+		if (document.readyState === 'complete') {
+			LightTableFilter.init();
+		}
+	});
+
+})(document);
+        
+    </script>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Birdseye', sans-serif;
+           background-color:#f5f3f1;
+        }
+        .title{
+            text-align: center;  
+        }
+        
+        ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: transparent;
+        }
+
+       .nav ul li {
+            float: right;
+        }
+
+       .nav ul li a {
+            display: block;
+            color: white;
+            padding:16px;
+            text-decoration: none;
+            font-family: 'Birdseye', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            position: relative;
+        }
+        .hover :hover{
+            color:grey;
+        }
+        .nav ul ul{
+            display: none;
+            position: absolute;
+        }
+        .nav ul li:hover ul{
+            display:block;
+        }
+        .nav ul ul li {
+            display: block;
+            float: none;
+            background-color: black;
+        }
+        .Academies{
+            padding: 0 0 0 0;
+        }
+         .First {
+            float: left;
+             padding: 0 0 0 0;
+             margin: 0;
+        }
+        .Second {
+            float: left;
+            padding: 0 0 0 0;
+            margin: 0;
+            }
+            .tools{
+                float: ;
+                padding: 0 0 0 0;
+                margin: 0;
+            }
+        * {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+.order-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+.order-table th, .order-table td {
+  text-align: left;
+  padding: 12px;
+}
+
+.order-table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.order-table tr.header, .order-table tr:hover {
+  background-color: #f1f1f1;
+    
+}
+        tr td a{
+        color: black;
+        text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="Nav" style="
+        background-color:black;
+        background-repeat: no-repeat;
+        background-size:cover; 
+        width: 100%;
+        border: 0;
+        margin: 0;
+        padding: 0 0 0 0;
+        "> 
+         <div class="Space" style="height:10;"></div>
+            <ul> 
+                <li>
+                <a href="Faculty.html"style="border:1px solid;">FACULTY</a>
+            </li>
+                <div class="hover">
+            <li>
+                <a>UTILITY</a>
+                <ul>
+                    <div class="tools">
+                    <li>
+                      <a href="MatcherM.html">
+                          Matchmaker
+                        </a>  
+                    </li>
+                    <li>
+                      <a href="Calander.html">
+                          Calendar
+                        </a>  
+                    </li>
+                    </div>
+                </ul>
+                </li>
+        <li>
+            <a href="Academy.html">ACADEMIES</a>
+                <ul>
+                    <div class="Academies" style="">
+                    <div class="First">
+                        <li><a href="Informatics.html">Informatics</a></li>
+                        <li><a href="MediaArts.html">Media Arts</a></li>
+                        <li><a href="Gemini.html">Gemini</a></li>
+                        <li><a href="BioMed.html">Biomed</a></li>
+                        <li><a href="MilitaryPrep.html">Military Prep</a></li>
+                    </div>
+                    <div class="Second">
+                        
+                        <li><a href="WomensEngineering.html">Women's Engineeing</a></li>
+                        <li><a href="Structural.html">Structural Engineeing</a></li>
+                        <li><a href="Robotic.html">Robotic Engineeing</a></li>
+                        <li><a href="GreenE.html">Green Engineeing</a></li>
+                        <li><a href="FutureEd.html">Future Educators</a></li>
+                    </div>
+                </div>
+                </ul>
+            </li> 
+            <li><a>APPLICATIONS</a><ul>
+                <li><a href="https://fs7.formsite.com/jwhitis79/form6/index.html">New Scholars</a></li>
+                <li><a href="Files/priority%20registration%20form.docx">Returining Scholars</a>
+                </li>
+                <li><a href="Files/relinquish%20kcait%20enrollment%20form%202017.docx">Relinquish Form</a></li>
+                <li><a href="http://www.kenton.k12.ky.us/userfiles/1167/my%20files/gemini%20app%2016-17%20year.pdf?id=55689">After School Thomas More College </a></li>
+                </ul>
+                </li>
+            <li>
+               <a class="" href="Home.html" >HOME</a>
+            </li>
+                </div>
+            <div class="hover">
+                <li style="float:left;">
+                <a class="kcait" href="Home.html" style="font-weight:900;">KCAIT</a>
+                </li>
+            </div>
+            </ul>
+             <div class="Space" style="height:10;"></div>
+        </div>
+        <div class="Space" style="height:20;"></div>
+    <div class="Space" style="height:20;"></div>
+   <input type="search" class="light-table-filter" data-table="order-table" placeholder="Search" id="myInput">
+
+	<table class="order-table">
+			     <tr class="header" >
+                    <th style="width:10%;">Name</th>
+                    <th style="width:10%;">Loaction</th>
+                    <th style="width:10%;">Academy</th>
+                     <th style="width:10%;">Subject</th>
+			     </tr>
+                <tr>
+                    <td><a href="Gemini.html#Mrs.Dem">Amanda Dempsey</a></td>
+                    <td><a href="Gemini.html#Mrs.Dem">Edgewood</a></td>
+                    <td><a href="Gemini.html#Mrs.Dem">Gemini/MilitaryPrep</a></td>
+                    <td><a href="Gemini.html#Mrs.Dem">English Teacher</a></td>
+              </tr>
+                <tr>
+                    <td><a href="Informatics.html#Mrs.L">Amanda Lewis</a></td>
+                    <td><a href="Informatics.html#Mrs.L">Dixie</a></td>
+                    <td><a href="Informatics.html#Mrs.L">Informatics/Media Arts Teacher</a></td>
+                    <td><a href="Informatics.html#Mrs.L">Informatics/Media Arts Teacher</a></td>
+              </tr>
+              <tr>
+                  <td><a href="Informatics.html#Mr.P">T.J. Pelfrey</a></td>
+                  <td><a href="Informatics.html#Mr.P">Dixie</a></td>
+                  <td><a href="Informatics.html#Mr.P">Informatics/Media Arts Teacher</a></td>
+                  <td><a href="Informatics.html#Mr.P">Math Teacher</a></td>
+              </tr>
+              <tr>
+                  <td><a href="Informatics.html#Ms.F">Heidi Frost</a></td>
+                  <td><a href="Informatics.html#Ms.F">Dixie</a></td>
+                  <td><a href="Informatics.html#Ms.F">Informatics/Media Arts Teacher</a></td>
+                  <td><a href="Informatics.html#Ms.F">English Teacher</a></td>
+              </tr>
+              <tr>
+                
+                  <td><a href="BioMed.html#Mr.B">Brian Noll</a></td>
+                  <td><a href="BioMed.html#Mr.B">Edgewood</a></td>
+                  <td><a href="BioMed.html#Mr.B">BioMedical</a></td>
+                  <td><a href="BioMed.html#Mr.B">Math Teacher</a></td>
+              </tr>
+       
+              <tr>
+                <td><a href="Misc.html#Dr.F">Francis O'Hara</a></td>
+                <td><a href="Misc.html#Dr.F">Edgewood</a></td>
+                <td><a href="Misc.html#Dr.F">All Academies</a></td>
+                <td><a href="Misc.html#Dr.F">Director</a></td>
+              </tr>
+             <tr>
+                
+                 <td><a href="BioMed.html#Ms.Sa">Sara Anderson</a></td>
+                 <td><a href="BioMed.html#Ms.Sa">Edgewood</a></td>
+                 <td><a href="BioMed.html#Ms.Sa">BioMedical</a></td>
+                 <td><a href="BioMed.html#Ms.Sa">Sciences</a></td>
+              </tr>
+              <tr>
+                
+                  <td><a href="Misc.html#Mrs.Kno">Amanda Knochelman</a></td>
+                  <td><a href="Misc.html#Mrs.Kno">Edgewood</a></td>
+                  <td><a href="Misc.html#Mrs.Kno">All Academies</a></td>
+                  <td><a href="Misc.html#Mrs.Kno">Career Counselor</a></td>
+              </tr>
+              <tr>
+                
+                  <td><a href="MilitaryPrep.html #Mr.B">Chris Bryson</a></td>
+                  <td><a href="MilitaryPrep.html #Mr.B">Edgewood</a></td>
+                  <td><a href="MilitaryPrep.html #Mr.B">Gemini/MilitaryPrep</a></td>
+                  <td><a href="MilitaryPrep.html #Mr.B">Math Teacher &amp; College/Career Coordinator</a></td>
+              </tr>
+              <tr>
+                  <td><a href="Robotic.html #Mr.O">Ian Olano</a></td>
+                  <td><a href="Robotic.html #Mr.O">Simon Kenton</a></td>
+                  <td><a href="Robotic.html #Mr.O">Robotic,Structural, and Womens Engineering</a></td>
+                  <td><a href="Robotic.html #Mr.O">Math Teacher</a></td>
+              </tr>
+              <tr>
+                
+                  <td><a href="MilitaryPrep.html #Mr.P">Heath Phillips</a></td>
+                  <td><a href="MilitaryPrep.html #Mr.P">Edgewood</a></td>
+                  <td><a href="MilitaryPrep.html #Mr.P">Military Prep</a></td>
+                  <td><a href="MilitaryPrep.html #Mr.P">Military Sciences Teacher</a></td>
+              </tr>
+              <tr>
+                
+                  <td><a href="GreenE.html#Mrs.Wo">Casey Wolfe</a></td>
+                  <td><a href="GreenE.html#Mrs.Wo">Scott</a></td>
+                  <td><a href="GreenE.html#Mrs.Wo">Green Engineering/ Future Educator</a></td>
+                  <td><a href="GreenE.html#Mrs.Wo">English Teacher</a></td>
+              </tr>
+               <tr>
+                
+                   <td><a href="FutureEd.html#Mrs.M">Melissa Insko</a></td>
+                   <td><a href="FutureEd.html#Mrs.M">Scott</a></td>
+                   <td><a href="FutureEd.html#Mrs.M">Future Educators</a></td>
+                   <td><a href="FutureEd.html#Mrs.M">Education Teacher</a></td>
+              </tr>
+               <tr>
+                
+                   <td><a href="MilitaryPrep.html #Mr.D">Larry Davis</a></td>
+                   <td><a href="MilitaryPrep.html #Mr.D">Edgewood</a></td>
+                   <td><a href="MilitaryPrep.html #Mr.D">Military Prep</a></td>
+                   <td><a href="MilitaryPrep.html #Mr.D">Military Sciences Teacher</a></td>
+              </tr>
+               <tr>
+                
+                   <td><a href="BioMed.html#Mrs.Ma">Nichole Mathews</a></td>
+                   <td><a href="BioMed.html#Mrs.Ma">Edgewood</a></td>
+                   <td><a href="BioMed.html#Mrs.Ma">BioMedical</a></td>
+                   <td>Biomedical Sciences Teacher</td>
+              </tr>
+               <tr>
+                
+                   <td><a href="Robotic.html#Mr.Ad">Adam Klaine</a></td>
+                   <td><a href="Robotic.html#Mr.Ad">Simon Kenton</a></td>
+                   <td><a href="Robotic.html#Mr.Ad">Structural and Robotic Engineering</a></td>
+                   <td><a href="Robotic.html#Mr.Ad">Engineering Teacher</a></td>
+              </tr>
+               <tr>
+                
+                   <td><a href="Robotic.html#Ms.Al">Alyssa Leimenstoll</a></td>
+                   <td><a href="Robotic.html#Ms.Al">Simon Kenton</a></td>
+                   <td><a href="Robotic.html#Ms.Al">Robotic and Structural Engineering</a></td>
+                   <td><a href="Robotic.html#Ms.Al">English Teacher</a></td>
+              </tr>
+               <tr>
+                
+                   <td><a href="GreenE.html#Mrs.Kri">Krista McKinley</a></td>
+                   <td><a href="GreenE.html#Mrs.Kri">Scott</a></td>
+                   <td><a href="GreenE.html#Mrs.Kri">Green Engineering/ Future Educator</td>
+                   <td><a href="GreenE.html#Mrs.Kri">Math Teacher</a></td>
+              </tr>
+               <tr>
+                
+                   <td><a href="Robotic.html#Mrs.D">Carol Daria</a></td>
+                   <td><a href="Robotic.html#Mrs.D">Simon Kenton</a></td>
+                   <td><a href="Robotic.html#Mrs.D">Intro to Engineering</a></td>
+                   <td><a href="Robotic.html#Mrs.D">Engineering Teacher</a></td>
+              </tr>
+               <tr>
+                
+                   <td><a href="Misc.html#Dr.W">Julie Whitis</a></td>
+                   <td><a href="Misc.html#Dr.W">Edgewood</a></td>
+                   <td><a href="Misc.html#Dr.W">All Academies</a></td>
+                   <td><a href="Misc.html#Dr.W">Principal</a></td>
+              </tr>
+	</table>
+</body>
+</html>

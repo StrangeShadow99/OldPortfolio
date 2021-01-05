@@ -1,0 +1,346 @@
+<!Document html>
+<html>
+<head>
+    <title>KCAIT</title>
+    <link rel="shortcut icon"  
+     href="pics/Untitled.png">
+    <script>
+        var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex> slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script>
+    <style>
+    * {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+     body{
+            margin: 0;
+            padding: 0;
+            font-family: 'Birdseye', sans-serif;
+           background-color:#f5f3f1;
+        }
+        .title{
+            text-align: center;  
+        }
+        
+        .nav ul {
+         list-style-type: none;
+         margin: 0;
+         padding: 0;
+         overflow: hidden;
+         background-color: transparent;
+        }
+
+       .nav ul li {
+            float: right;
+        }
+
+       .nav ul li a {
+            display: block;
+            color: white;
+            padding:16px;
+            text-decoration: none;
+            font-family: 'Birdseye', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            position: relative;
+        }
+        .hover :hover{
+            color:grey;
+        }
+        .nav ul ul{
+            display: none;
+            position: absolute;
+        }
+        .nav ul li:hover ul{
+            display:block;
+        }
+        .nav ul ul li {
+            display: block;
+            float: none;
+           
+        }
+        .Academies{
+            padding: 0 0 0 0;
+        }
+         .First {
+            float: left;
+             padding: 0 0 0 0;
+             margin: 0;
+        }
+        .Second {
+            float: left;
+            padding: 0 0 0 0;
+            margin: 0;
+            }
+            .tools{
+                float: ;
+                padding: 0 0 0 0;
+                margin: 0;
+            }
+        .kcait{
+            text-align: left;
+        }
+        .DrO{
+            text-align: center;
+        }
+        .SubHead{
+            
+            color:#a9a1a1;
+        }
+        .SubHead2{
+            color: #a9a1a1;
+        }
+        .Text{
+            font-size: 20;
+            font-weight:500;
+        }
+        .Apply{
+            background-color: white;
+            color: black;
+        }
+        .Apply:hover{
+            background-color: transparent;
+            color: white;
+        }
+        .video{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="Main">
+    <div class="Nav" style="
+        background-color:black;
+        background-repeat: no-repeat;
+        background-size:cover; 
+        height:90%;
+        width: 100%;
+        border: 0;
+        margin: 0;
+        padding: 0 0 0 0;
+        "> 
+        
+        <div class="Space" style="height:10;"></div>
+            <ul>
+            
+                <div class="hover">
+                <li>
+                <a href="Faculty.html">FACULTY</a>
+            </li>
+            <li>
+                <a>UTILITY</a>
+                <ul>
+                    <div class="tools">
+                    <li>
+                      <a href="MatcherM.html">
+                          MATCHMAKER
+                        </a>  
+                    </li>
+                    <li>
+                      <a href="Calander.html">
+                          CALANDER
+                        </a>  
+                    </li>
+                    </div>
+                </ul>
+                </li>
+        <li>
+            <a href="Academy.html">ACADEMIES</a>
+                <ul>
+                    <div class="Academies" style="">
+                    <div class="First">
+                        <li><a href="Informatics.html">Informatics</a></li>
+                        <li><a href="MediaArts.html">Media Arts</a></li>
+                        <li><a href="Gemini.html">Gemini</a></li>
+                        <li><a href="BioMed.html">Biomed</a></li>
+                        <li><a href="MilitaryPrep.html">Military Prep</a></li>
+                    </div>
+                    <div class="Second">
+                        
+                        <li><a href="WomensEngineering.html">Women's Engineeing</a></li>
+                        <li><a href="Structural.html">Structural Engineeing</a></li>
+                        <li><a href="Robotic.html">Robotic Engineeing</a></li>
+                        <li><a href="GreenE.html">Green Engineeing</a></li>
+                        <li><a href="FutureEd.html">Future Educators</a></li>
+                    </div>
+                    </div>
+                </ul>
+            </li>   
+            
+            <li><a>APPLICATIONS</a><ul>
+                <li><a href="https://fs7.formsite.com/jwhitis79/form6/index.html">New Schollars</a></li>
+                <li><a href="Files/priority%20registration%20form.docx">Returining Schollars</a>
+                </li>
+                <li><a href="Files/relinquish%20kcait%20enrollment%20form%202017.docx">Relinquish Form</a></li></ul>
+                </li>
+                </div>
+            <li>
+               <a class="" href="Home.html"style="border:1px solid;" >HOME</a>
+            </li>
+                
+            <div class="hover">
+                <li style="float:left;">
+                <a class="kcait" href="Home.html" style="font-weight:900;">KCAIT</a>
+                </li>
+            </div>
+            </ul>
+        <div class="Space" style="height:220;"></div>
+       <p style=" padding:0 0 0 40;"><font size="7" style="text-align:center; color:#ededed; "> Kenton County Academies of <em >Innovation</em> and Technology</font></p>
+      <a class="Apply" href="https://fs7.formsite.com/jwhitis79/form6/index.html" style=" border: 1px solid white; text-decoration:none; margin-left:40;padding: 10 10 7 10; "><font size="5px">APPLY</font></a>
+            </div>
+        <div class="space"style="height:20px;"></div>
+        <div class="video" style="background-color:White width:100%; height:300;">
+        <div class="Space" style="height:10;"></div>
+    <video width="500" height="" controls style="">
+        <source src="videos/The%20Academies%20an%20office%20parody.mp4">
+    </video>
+    </div>
+        <h1 style="text-align:center;">Description</h1>
+        
+        <div class="DrO" style="margin:0; padding: 0 0 0 20; background-color:#f5f3f1; height:400px; ">
+         <div class="Space" style="height:20;"></div>
+            <img src="pics/DrO.png" style="float:left; padding:20 0 0 0; ">
+            <div class="DrOText" style="text-align:left; margin-left:340px; margin-bottom:5px; ">
+                
+                <h4 class="SubHead">Principal and Founder</h4>
+                <h1>Dr.Francis O'Hara</h1>
+                <p class="Text">From being a business man to getting his bachelor's, master's, and doctorate degrees in Education from the University of Kentucky, the director of the academies has a broad base of experiences and an unrivaled passion for developing meaningful education for the next generation. </p>
+                  <div class="Space" style="height:50;"></div>
+            </div>
+        </div>
+        <div class="Truly">
+            <div style="text-align:center;">
+            <h1 style="text-align: center;">Truly a System of Excellence</h1>
+            <p class="Text"style="">Take a look at what our scholars have been up to!</p>
+            <div class="Space" style="height:45;"></div>
+            </div>
+            <img style=" float: right; padding:0 70 0 0; "src="pics/People.jpg">
+            <div class="Space" style="height:45;"></div>
+            <div style="padding: 0 0 0 20;">
+                <h4 class="SubHead2"> Biomedical Science</h4>
+                <p class="Text">Our white-coat scholars are celebrating their multiple awards.</p>
+                <h4 class="SubHead2"> Media Arts and Informatics</h4>
+                <p class="Text">Mrs. Amanda Lewis received the Golden Apple Award! Congrats!</p>
+                <h4 class="SubHead2"> Future Educators
+                </h4>
+                <p class="Text">They're doing... something...</p>
+                <div class="Space" style="height:10;"></div>
+            </div>
+            
+        </div>
+        <div class="Gem" style="background-color:#f5f3f1;">
+            <div class="Space" style="height:30;"></div>
+            <img style=" float: right; padding:0 70 0 0; "src="pics/presentation.jpg">
+            <div class="Space" style="height:45;"></div>
+            <div style="padding: 0 0 0 20;">
+                <h4 class="SubHead2">Senior Gemini Program</h4>
+                <p class="Text">Our seniors are the ones who made this website!</p>
+                <h4 class="SubHead2"> Green Engineering</h4>
+                <p class="Text">Helping the environment, I'd assume.</p>
+                <h4 class="SubHead2"> Robotic Engineering
+                </h4>
+                <p class="Text">Plotting the inevitable rule of machines over mankind.</p>
+                <div class="Space" style="height:10;"></div>
+            </div>
+    </div>   
+        </div>
+        <div class="Space" style="height:10;"></div>
+        <div class="nav">
+            <ul style="float:left;">
+                
+                <li>
+                    <h2 style=" text-decoration: underline; color:black; padding:0 0 0 20 ;">Contact</h2>
+                    <h4 style=" color:black; padding:0 0 0 20 ;">Phone: 859-341-2266</h4>
+                    <h4 style=" color:black; padding:0 0 0 20 ;">Fax: 859-341-6486</h4>
+                    <h4 style=" color:black; padding:0 0 0 20 ;">3234 Turkeyfoot Road 
+Fort Mitchell, KY 41017</h4>
+                    <h4 style=" color:black; padding:0 0 0 20 ;">Creators of websites emails:</h4> 
+                    <h4 style=" color:black; padding:0 0 0 20 ;">Main Coder: nkaley99@gmail.com</h4>
+                </li>
+            </ul>
+            </div>
+        <div class="Space" style="height:10;"></div>
+    </body>                      
+</html>
